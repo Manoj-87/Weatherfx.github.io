@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>WeatherFX | Manoj</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- Background Canvas -->
+  <canvas id="weatherCanvas"></canvas>
+
+  <!-- App -->
+  <main class="app">
+
+    <h1>WeatherFX</h1>
+
+    <div class="search">
+      <input id="cityInput" placeholder="Enter city name" />
+      <button id="searchBtn">Search</button>
+    </div>
+
+    <button id="locBtn" class="loc">📍 Use My Location</button>
+
+    <section class="weather" id="weatherBox">
+
+      <h2 id="city"></h2>
+      <div id="temp" class="temp"></div>
+
+      <img id="icon" />
+
+      <p id="desc"></p>
+
+      <p id="details"></p>
+
+    </section>
+
+    <p id="error" class="error"></p>
+
+  </main>
+
+  <!-- JS -->
+  <script src="script.js"></script>
+
+</body>
+</html>
